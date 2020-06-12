@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/font/css/fontawesome-all.min.css">
+    
+    <!-- CSS Add on -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/image/favicon.png">
+
+    <title>Keranjang Saya | Website Resmi FETOT</title>
+  </head>
+  <body>
+    <!-- nav pertama -->
+    <div style="background-color:black">
+            <div class="container text-light p-1">
+                <div class="row">
+                  <div class="col-md-6">
+                      <ul class="nav">
+                          <li class="nav-item">
+                              <a class="navbar-brand ml-5" href="backend_pelanggan.html">
+                            <img class="d-block my-auto" src="assets/image/logowhite.png" width="80">
+                            </a>
+                            </li>
+                          <li class="nav-item" style="margin-top:0.4em;">|</li>
+                          <li class="nav-item"><h5 class="mt-2 ml-3 text-uppercase font-weight-light">Keranjang Saya</h5></li>
+                      </ul>
+                  </div>
+                    <div class="col-md-4 offset-md-2">
+                        <ul class="nav text-right justify-content-right">
+                            <li class="nav-item dropdown"><a class="nav-link text-light font-weight-bold dropdown-toggle" href="#" role="button"  id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><i class="fas fa-user-circle fa-fw mr-2"></i>Ferdy</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="dashboard_pelanggan.html" target="blank"><i class="fas fa-user fa-fw mr-2"></i>Akun Saya</a>
+                                    <a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt fa-fw mr-2"></i>Keluar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" style="margin-top:0.4em;">|</li>
+                            <span class="hoverdd">
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link text-light" href="#" id="navbarDropdowns" role="button" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fas fa-bell fa-fw"></i>
+                                      <!-- <span class="badge badge-warning rounded-circle align-top" style="margin-left:-0.7rem;">0</span> -->
+                                  </a>
+                                  <div class="dropdown-menu mt-0" style="margin-left:-294%;border-radius:0.2em 0 0.2em 0.2em;border:none;width:18rem;" aria-labelledby="navbarDropdown">
+                                    <p class="dropdown-item mt-3 text-center text-secondary">Tidak Ada Notifikasi</p>
+                                  </div>
+                              </li>
+                            </span>
+                            <span class="hoverdd">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-light" style="margin-left:-1rem;" href="#" id="navbarDropdowns" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-envelope fa-fw"></i> 
+                                        <!-- <span class="badge badge-warning rounded-circle align-top" style="margin-left:-0.7rem;">0</span> -->
+                                    </a>
+                                    <div class="dropdown-menu mt-0" style="margin-left:-294%;border-radius:0.2em 0 0.2em 0.2em;border:none;width:18rem;" aria-labelledby="navbarDropdown">
+                                      <p class="dropdown-item mt-3 text-center text-secondary">Tidak Ada Pesan</p>
+                                    </div>
+                                </li>
+                                </span>
+                            <li class="nav-item"><a href="pesanansaya.html" class="nav-link text-light" style="margin-left:-1rem;">Pesanan Saya</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- end nav pertama -->
+
+    <!-- isi -->
+
+        <div class="container-fluid">
+            <div class="row bg-white">
+                <div class="container p-1">
+                <ul class="list-inline mt-4">
+                    <li class="list-inline-item ml-5">
+                        <h5 class="font-weight-light text-uppercase text-primary">1&nbsp;&nbsp;Keranjang Belanja</h5>
+                    </li>
+                    <li class="list-inline-item">
+                            <h5 class="text-muted ml-5"><i class="fas fa-angle-right fa-fw"></i></h5>
+                    </li>
+                    <li class="list-inline-item">
+                            <h5 class="font-weight-light text-uppercase text-muted ml-5">2&nbsp;&nbsp;Informasi Pesanan</h5>
+                    </li>
+                    <li class="list-inline-item">
+                            <h5 class="text-muted ml-5"><i class="fas fa-angle-right fa-fw"></i></h5>
+                    </li>
+                    <li class="list-inline-item">
+                            <h5 class="font-weight-light text-uppercase text-muted ml-5">3&nbsp;&nbsp;Pembayaran</h5>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container p-1 mt-3">
+            <p class="ml-5">Gratis Ongkos Kirim untuk pesanan di atas <span class="text-primary">Rp 500.000</span></p>
+        </div>
+        <div class="container bg-white">
+            <div class="row p-3" style="font-size:0.9rem;border-bottom:#d8d8d8 1px solid">
+                <div class="col-md-4 offset-md-1">
+                    <p class="mt-3">Nama Produk</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="mt-3">Harga</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="mt-3">Jumlah</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="mt-3">Total</p>
+                </div>
+            </div>
+            <div class="row p-3" style="border-bottom:#d8d8d8 1px solid"> <!-- item 1-->
+                <div class="col-md-1">
+                    <img src="assets/image/ft1thumb.png">
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mt-4 font-weight-normal">FT1 6GB+64GB Hitam</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="mt-4 font-weight-normal"><span class="small">Rp</span> 3.999.000</h5>
+                </div>
+                <div class="col-md-2">
+                    <div class="input-group mt-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-minus fa-fw small"></i></button>
+                        </div>
+                        <input type="text" class="form-control text-center" placeholder="1" aria-label="" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-plus fa-fw small"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="mt-4 text-primary" style="font-size:1rem;;">Rp 3.999.000</p>
+                </div>
+                <div class="col-md-1 mt-4">
+                    <a href="#" class="text-secondary"><i class="fas fa-times fa-fw"></i></a>
+                </div>
+            </div>
+            <div class="row p-3"> <!-- item 2 -->
+                <div class="col-md-1">
+                    <img src="assets/image/ft1casethumb.png">
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mt-4 font-weight-normal">Denim Case FETOT FT1 (Abu-abu)</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="mt-4 font-weight-normal"><span class="small">Rp</span> 250.000</h5>
+                </div>
+                <div class="col-md-2">
+                    <div class="input-group mt-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-minus fa-fw small"></i></button>
+                        </div>
+                        <input type="text" class="form-control text-center" placeholder="1" aria-label="" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-plus fa-fw small"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="mt-4 text-primary" style="font-size:1rem;;">Rp 250.000</p>
+                </div>
+                <div class="col-md-1 mt-4">
+                    <a href="#" class="text-secondary"><i class="fas fa-times fa-fw"></i></a>
+                </div>
+            </div>
+            <div class="row p-3"> <!-- item 3 -->
+                <div class="col-md-1">
+                    <img src="assets/image/ft1prothumb.png">
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mt-4 font-weight-normal">FT1 Pro 8GB+128GB Putih</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="mt-4 font-weight-normal"><span class="small">Rp</span> 6.300.000</h5>
+                </div>
+                <div class="col-md-2">
+                    <div class="input-group mt-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-minus fa-fw small"></i></button>
+                        </div>
+                        <input type="text" class="form-control text-center" placeholder="1" aria-label="" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fas fa-plus fa-fw small"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="mt-4 text-primary" style="font-size:1rem;;">Rp 6.300.000</p>
+                </div>
+                <div class="col-md-1 mt-4">
+                    <a href="#" class="text-secondary"><i class="fas fa-times fa-fw"></i></a>
+                </div>
+            </div>
+            <div class="row pr-3 pt-3" style="border-top:#F8F9FA 0.5rem solid">
+                <div class="col-md-3 offset-md-9">
+                    <h2 class="text-right text-primary"><span class="font-weight-normal" style="font-size:1.2rem;">Rp</span> 10.549.999</h2>
+                </div>
+            </div>
+            <div class="row pr-3 pb-3">
+                <div class="col-md-6 offset-md-6 text-right">
+                    <a class="text-secondary text-uppercase vertical-align-middle mr-4 nounderline" style="font-size:0.9rem;" href="backend_pelanggan.html">Lanjutkan Belanja</a>
+                    <a class="btn btn-primary mb-2 text-uppercase vertical-align-middle" href="pemesanan.html">Lanjut Ke Pemesanan</a>
+                </div>
+            </div>
+        </div>
+    
+    <!-- end isi -->
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 text-light mt-5" style="background-color:#494949;">
+
+    <!-- isi footer -->
+    <div class="container">
+      <div class="row">
+          <div class="col-md-6 mb-4">
+          <form class="input-group mt-1">
+              <label class="mr-3 mt-1">Dapatkan Info Terupdate</label>
+              <input type="email" class="form-control" placeholder="Masukkan email anda"
+                aria-label="Masukkan email anda" aria-describedby="basic-addon2" style="border-radius:25rem 0 0 25rem;">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-outline-white my-0 text-dark font-weight-bold" type="button" style="border-radius: 0 25rem 25rem 0;">Berlangganan</button>
+              </div>
+            </form>
+        </div>
+        <div class="col-md-4 offset-md-2">
+          <ul class="list-inline text-light text-right mt-2">
+            <li class="list-inline-item"><h5>Ikuti Kami</h5></li>
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-instagram fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-twitter fa-fw"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end isi footer -->
+    <!-- Footer bawah -->
+    <div class="container text-center text-md-left">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+          <!-- konten -->
+          <h6 class="text-uppercase font-weight-bold">FETOT Indonesia</h6>
+          <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>FETOT Indonesia Official Online Store adalah e-commerce resmi untuk semua produk Fetot dan produk-produk
+            partner lainnya.
+          </p>
+  
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">Produk</h6>
+          <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="ft1.html">FT1</a>
+          </p>
+          <p>
+            <a href="#">FT1 Pro</a>
+          </p>
+          <p>
+            <a href="#">FTBook Pro</a>
+          </p>
+  
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">Bantuan</h6>
+          <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Cara Pemesanan</a>
+          </p>
+          <p>
+            <a href="#!">Cara Pembayaran</a>
+          </p>
+          <p>
+            <a href="#">Informasi Pengiriman</a>
+          </p>
+          <p>
+            <a href="#">Pembatalan Transaksi</a>
+          </p>
+  
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase font-weight-bold">Hubungi Kami</h6>
+          <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3 fa-fw"></i> Jalan Titi Pahlawan, Medan, ID</p>
+          <p>
+            <i class="fas fa-envelope mr-3 fa-fw"></i> <a href="mailto:ferdyhasanisma@gmail.com">cs@fetot.co.id</a></p>
+          <p>
+            <i class="fas fa-phone mr-3 fa-fw"></i> + 62 811 354 500</p>
+          <p>
+            <i class="fab fa-whatsapp fa-fw mr-3"></i> + 62 811 354 500  </p>
+            <p class="small">
+              Desain oleh: Ferdi Hasan Asyari Isma  </p><br>
+  
+        </div>
+      </div>
+    </div>
+    <!-- Footer bawah -->
+    <!-- bank, dll -->
+    <div class="container-fluid">
+            <div class="row text-dark p-2" style="background-color:#DDDDDD;">
+              <div class="col-md-3 mb-2">
+                <small><b>Cicilan 0%</b></small><br>
+                <img src="assets/image/bca.png" class="img-fluid img-thumbnail" height="30" width="50">
+                <img src="assets/image/bni.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                <img src="assets/image/mandiri.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                <img src="assets/image/cimb.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                <img src="assets/image/mega.svg" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+              </div>
+              <div class="col-md-5 mb-2">
+                  <small><b>Metode Pembayaran</b></small><br>
+                  <img src="assets/image/paypal.png" class="img-fluid img-thumbnail" height="40" width="150">
+                  <img src="assets/image/visa.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/mastercard.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/atmbersama.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/prima.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/indomaret.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/alfamart.jpg" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/bca.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/bni.png" class="img-fluid img-thumbnail ml-1 mt-2" height="30" width="50">
+                  <img src="assets/image/bri.png" class="img-fluid img-thumbnail ml-1 mt-2" height="30" width="50">
+                  <img src="assets/image/cimb.png" class="img-fluid img-thumbnail ml-1 mt-2" height="30" width="50">
+                  <img src="assets/image/dbs.png" class="img-fluid img-thumbnail ml-1 mt-2" height="30" width="50">
+                  <img src="assets/image/mandiri.png" class="img-fluid img-thumbnail ml-1 mt-2" height="30" width="50">
+                  <img src="assets/image/maybank.png" class="img-fluid img-thumbnail ml-1 mt-2" height="30" width="50">
+                  <img src="assets/image/mega.svg" class="img-fluid img-thumbnail ml-1 mt-2" height="30" width="50">
+              </div>
+              <div class="col-md-3 mb-2">
+                  <small><b>Jasa Pengiriman</b></small><br>
+                  <img src="assets/image/jne.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/j&t.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/sicepat.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+                  <img src="assets/image/posindonesia.png" class="img-fluid img-thumbnail ml-1" height="30" width="50">
+              </div>
+            </div>
+          </div>
+      
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light font-italic" style="background-color:#222222;font-size:0.8rem;">&copy; 2019 Copyright
+      <a href="mailto:ferdyhasanisma@gmail.com" class="text-light"> FETOT Indonesia Official Online Store.</a> All Rights Reserved.
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap/js/jquery.min.js">
+    
+    </script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js">
+      $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+      })
+    </script>
+  </body>
+</html>

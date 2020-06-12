@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/font/css/fontawesome-all.min.css">
+    
+    <!-- CSS Add on -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="icon" href="assets/image/favicon.png">
+    <style>
+        body{
+            background-color:white;
+        }
+    </style>
+
+    <title>Admin | Website Resmi FETOT</title>
+  </head>
+  <body>
+
+
+      <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-1" style="background-color:black;">
+          <a class="navbar-brand col-sm-3 col-md-2 mb-1" href="dashboard_admin.html"><img src="assets/image/logowhite.png" height="30"></a>
+          <input class="form-control form-control-sm form-control-dark w-100" type="text" placeholder="Cari..." aria-label="Search">
+          <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+              <a class="nav-link text-light" href="login_admin.html">Keluar</a>
+            </li>
+          </ul>
+        </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column mt-3 mb-5">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="dashboard_admin.html">
+                <i class="fas fa-home fa-fw mr-1"></i>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary dropdown-toggle" href="#" data-toggle="collapse" data-target="#pesanan">
+                    <i class="fas fa-shopping-bag fa-fw mr-1"></i>
+                    Pesanan
+                  </a>
+                  <div class="collapse show" id="pesanan">
+                    <ul class="nav flex-column mt-1 p-2 ml-3">
+                      <li class="nav-item"><a href="dashboard_admin.html" class="nav-link text-secondary"><i class="fas fa-cart-arrow-down fa-fw mr-1"></i>Pesanan Masuk</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="far fa-clock fa-fw mr-1"></i>Pesanan Diproses</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-truck fa-fw mr-1"></i>Sedang Dikirim</a></li>
+                      <li class="nav-item"><a href="pesananselesai_admin.html" class="nav-link active"><i class="fas fa-check fa-fw mr-1"></i>Pesanan Selesai</a></li>
+                      <li class="nav-item"><hr></li>
+                    </ul>
+                  </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary dropdown-toggle" href="#" data-toggle="collapse" data-target="#produk">
+                    <i class="fas fa-mobile-alt fa-fw mr-1"></i>
+                    Kelola Produk
+                  </a>
+                  <div class="collapse" id="produk">
+                      <ul class="nav flex-column mt-1 p-2 ml-3">
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-list fa-fw mr-1"></i>Daftar Produk</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-plus fa-fw mr-1"></i>Tambah Produk</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-edit fa-fw mr-1"></i>Edit Produk</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-trash-alt fa-fw mr-1"></i>Hapus Produk</a></li>
+                        <li class="nav-item"><hr></li>
+                      </ul>
+                    </div>
+            </li>
+            <li class="nav-item">
+                <a href="stok_admin.html" class="nav-link text-secondary"><i class="fas fa-boxes fa-fw mr-2"></i>Stok Barang</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary" href="#">
+                    <i class="fas fa-undo fa-fw mr-1"></i>
+                    Pengembalian
+                  </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary" href="#">
+                    <i class="fas fa-users fa-fw mr-1"></i>
+                    Pelanggan
+                  </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary dropdown-toggle" href="#" data-toggle="collapse" data-target="#laporan">
+                    <i class="far fa-chart-bar fa-fw mr-1"></i>
+                    Laporan
+                  </a>
+                  <div class="collapse" id="laporan">
+                      <ul class="nav flex-column mt-1 p-2 ml-3">
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-book fa-fw mr-1"></i>Laporan Keuangan</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-clipboard fa-fw mr-1"></i>Laporan Penjualan</a></li>
+                        <li class="nav-item"><hr></li>
+                      </ul>
+                    </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary dropdown-toggle" href="#" data-toggle="collapse" data-target="#promosi">
+                    <i class="fas fa-bullhorn fa-fw mr-1"></i>
+                    Promosi
+                  </a>
+                  <div class="collapse" id="promosi">
+                      <ul class="nav flex-column mt-1 p-2 ml-3">
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-percent fa-fw mr-1"></i>Diskon</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-ticket-alt fa-fw mr-1"></i>Kupon</a></li>
+                        <li class="nav-item"><hr></li>
+                      </ul>
+                    </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary" href="#">
+                    <i class="fas fa-file-alt fa-fw mr-1"></i>
+                    Kelola Web
+                  </a>
+            </li>
+            <li><hr></li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary" href="#">
+                    <i class="fas fa-envelope fa-fw mr-1"></i>
+                    Pesan
+                  </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary" href="#">
+                    <i class="fas fa-bell fa-fw mr-1"></i>
+                    Notifikasi <span class="badge badge-warning">5</span>
+                  </a>
+            </li>
+          </ul>
+
+          
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 mb-5"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <h1 class="h2">Pesanan</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button class="btn btn-sm btn-outline-secondary">Kirim</button>
+              <button class="btn btn-sm btn-outline-secondary">Eksport</button>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-calendar fa-fw"></i>
+                Bulan Ini
+              </button>
+              <div class="dropdown-menu" id="urutkan" style="margin-left:-2rem;">
+                <a href="#" class="dropdown-item">
+                  Minggu Ini</a>
+                  <a href="#" class="dropdown-item">
+                      Hari Ini</a>
+                      <a href="#" class="dropdown-item">
+                          Tahun Ini</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <h4><i class="fas fa-check fa-fw mr-2"></i>Pesanan Selesai</h4>
+          <small><i class="fas fa-history fa-fw mr-1"></i>Terakhir update: 1 menit yang lalu</small>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th>#No. Pesanan</th>
+                <th>Tanggal Dipesan</th>
+                <th>Tanggal Selesai</th>
+                <th>Kurir</th>
+                <th>Penerima</th>
+                <th>Metode Pembayaran</th>
+                <th>Total (Rp)</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5190231102</td>
+                <td>18/06/2019 11:29</td>
+                <td>20 Juni 2019 13:55</td>
+                <td>JNE Reg</td>
+                <td>Ferdy</td>
+                <td>Virtual Account CIMB Niaga <span class="badge badge-info">LUNAS</span></td>
+                <td>3.999.000</td>
+                <td><a href="#" class="text-info" data-toggle="modal" data-target="#exampleModalCenter">Detil Pesanan</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+ 
+    <!-- Modal 2 -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal-title">Detil Pesanan</div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row mb-2">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">No. Pesanan</th>
+                                <td>#5190231102</td>
+                              </tr>
+                              <tr>
+                                <th scope="col">Tanggal Pesanan</th>
+                                <td>18/06/2019 11:29</td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">Nama Penerima</th>
+                                    <td>Ferdy Hasan</td>
+                                  </tr>
+                              <tr>
+                                <th scope="row">No Telpon</th>
+                                <td>+62 811354500</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Alamat</th>
+                                <td>Komplek Griya Minimalis Marelan B-1<br>
+                                  Rengas Pulau, Medan Marelan<br>
+                                  Medan, Sumatera Utara 20255</td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">Metode Pembayaran</th>
+                                  <td>Virtual Account CIMB Niaga <span class="badge badge-info">LUNAS</span></td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">Kurir</th>
+                                  <td>JNE Reguler</td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">Total</th>
+                                  <td>Rp 3.999.000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-md-3">
+                        <h5>Barang Pesanan</h5>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                          <hr>
+                        </div>
+                      </div>
+                    <div class="row mb-2"> <!-- item 1-->
+                      <div class="col-md-1">
+                          <img src="assets/image/ft1thumb.png">
+                      </div>
+                      <div class="col-md-6 offset-md-1">
+                          <p class="mt-4 font-weight-normal">FT1 6GB+64GB Ungu</p>
+                      </div>
+                      <div class="col-md-2">
+                          <p class="mt-4 font-weight-bold">1 unit</p>
+                      </div>
+                    </div>
+
+                  </div> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5" data-dismiss="modal"><i class="fas fa-print mr-1 fa-fw"></i>Cetak Invoice</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- end modal -->
+    
+    <!-- Copyright -->
+
+    <!-- Copyright -->
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
